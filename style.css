@@ -1,0 +1,130 @@
+:root {
+    --btn-main-col: #fff;
+    --theme-col: #fff;
+    --btn-hover-col: #52abfd;
+    --text-col: #52abfd;
+    --border-col: #6ab6fd;
+    --border-focus-col: #178bf8;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: #fff;
+    user-select: none;
+    font-size: 20px;
+}
+body {
+    background-color: var(--theme-col);
+}
+button {
+    background-color: var(--theme-col);
+    text-align: center;
+    border: 2px solid var(--text-col);
+    cursor: pointer;
+    color: var(--text-col);
+    transition: .2s;
+}
+button:hover {
+    background: var(--btn-hover-col);
+    color: var(--btn-main-col);
+}
+button:active {
+    background-color: var(--theme-col);
+}
+input:focus {
+    outline: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.row {
+    display: flex;
+    gap: 10px;
+}
+.menu button {
+    min-height: 50px;
+    min-width: 150px;
+    border-radius: 15px;
+}
+
+.conventer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.conventer .field input {
+    background-color: var(--theme-col);
+    color: var(--text-col);
+    text-align: center;
+    border-radius: 10px;
+    min-height: 30px;
+    min-width: 100px;
+    border: 2px solid var(--border-col);
+    padding: 15px
+}
+.conventer .field input:focus {
+    border: 2px solid var(--border-focus-col);
+}
+.conventer .field p {
+    color: var(--text-col);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.conventer button {
+    min-height: 20px;
+    min-width: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 3%
+}
+.units {
+    display: flex;
+    position: absolute;
+    margin-top: 40%;
+    gap: 50px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column button {
+    border: none;
+    padding: 5px;
+}
+.onclick {
+    background-color: var(--border-focus-col);
+    border-color: var(--border-focus-col);
+    color: var(--btn-main-col);
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px;
+    background-color: var(--border-focus-col);
+}
+.option label {font-size: 17px; margin-top: 10px}
+input[type="radio"] {
+    accent-color: var(--border-focus-col);
+    margin-right: 5px;
+}

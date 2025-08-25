@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conventer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="option">
+        <p>Тема</p>
+        <label><input type="radio" name="theme" id="light" checked>Светлая</label>
+        <label><input type="radio" name="theme" id="dark">Тёмная</label>
+    </div>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="row">
+                <button id="weight">Масса</button>
+                <button id="temperature">Температура</button>
+                <button id="angle">Углы</button>
+            </div>
+            <div class="row">
+                <button id="distance">Расстояние</button>
+                <button id="square">Площадь</button>
+                <button id="volume">Объём</button>
+            </div>
+        </div>
+        <div class="conventer">
+            <div class="field">
+                <input type="number" value="0" id="firstInp" min="0">
+                <p id="firstHint">Килограмм</p>
+            </div>
+            <button id="change">=</button>
+            <div class="field">
+                <input type="text" value="0" id="secondInp">
+                <p id="secondHint">Килограмм</p>
+            </div>
+        </div>
+        <div class="units">
+        </div>
+    </div>
+</body>
+</html>
